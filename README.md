@@ -1,119 +1,78 @@
-# Kleinanzeigen Helper - Firefox Extension (v2.0)
+Kleinanzeigen Helper - Firefox Extension (v1)
 
-Eine praktische Browser-Extension für Kleinanzeigen.de, die dir hilft, schneller zu kommunizieren und Anzeigen zu verwalten.
+A simple browser tool for Kleinanzeigen.de to help you manage ads and send messages faster.
+What it does
 
-## 🎯 Features
+    Message Templates: Save and use your own text snippets for quick replies.
 
-- **📝 Antwortvorlagen**: Erstelle und verwende vorgefertigte Nachrichtentexte
-- **✏️ Vorlagen bearbeiten**: Eigene Einstellungsseite zum Verwalten deiner Vorlagen
-- **👁️ Anzeigen ausblenden**: Blende uninteressante Anzeigen aus (kleiner, unauffälliger Button)
-- **↩️ Rückgängig machen**: 5 Sekunden Zeit zum Rückgängig machen nach dem Ausblenden
-- **⚡ Schnelle Kommunikation**: Ein Klick genügt, um Standardnachrichten einzufügen
-- **💾 Synchronisierung**: Deine Vorlagen werden in deinem Browser gespeichert
+    Manage Templates: A dedicated settings page to create or edit your texts.
 
-## 📦 Installation in Firefox
+    Hide Ads: A small button to hide ads you aren't interested in.
 
-1. **Firefox öffnen** und `about:debugging` in die Adresszeile eingeben
-2. **"Dieser Firefox"** anklicken (links im Menü)
-3. **"Temporäres Add-on laden..."** klicken
-4. **Wähle die ZIP-Datei** direkt aus (oder entpacke sie und wähle manifest.json)
-5. **Fertig!** Die Extension ist geladen
+    Undo Function: You get 5 seconds to undo hiding an ad if you clicked by mistake.
 
-⚠️ **WICHTIG**: Temporäre Add-ons werden beim Neustart von Firefox entfernt!
+    Settings: Toggle features like the "hide" button or the undo notification on and off.
 
-## 🚀 Verwendung
+    Sync: Your templates are saved directly in your browser.
 
-### Vorlagen verwalten
+Installation (Firefox)
 
-1. **Klicke auf das Extension-Icon** in deiner Browser-Toolbar
-2. **"Vorlagen verwalten"** klicken → Öffnet die Einstellungsseite
-3. Dort kannst du:
-   - Neue Vorlagen erstellen
-   - Bestehende Vorlagen bearbeiten (✏️ Button)
-   - Vorlagen löschen (🗑️ Button)
-   - Ausgeblendete Anzeigen zurücksetzen
-   - **Einstellungen anpassen** (Features an/aus schalten)
+    Open Firefox and type about:debugging in the address bar.
 
-### Vorlagen verwenden
+    Click on "This Firefox" in the left menu.
 
-**Auf Kleinanzeigen.de:**
-- Gehe zu einer Anzeige
-- Öffne das Nachrichtenfeld
-- Du siehst Buttons mit deinen Vorlagen unter dem Textfeld
-- Klick auf einen Button → Text wird eingefügt
+    Click "Load Temporary Add-on...".
 
-**Im Chatverlauf:**
-- Wenn du mit jemandem bereits schreibst
-- Buttons erscheinen auch dort automatisch
-- Nutze sie für schnelle Antworten
+    Select your ZIP file or the manifest.json.
 
-### Anzeigen ausblenden
+    The extension is now active.
 
-- **Kleiner ✕ Button** oben rechts bei jeder Anzeige
-- Fährt man drüber, wird er deutlicher sichtbar
-- Nach dem Klick: **5 Sekunden Countdown** zum Rückgängig machen
-- Button "Rückgängig" erscheint unten rechts
-- Danach wird die Anzeige dauerhaft ausgeblendet
+⚠️ Note: Temporary extensions are removed by Firefox every time you restart the browser. You will need to reload it then.
+How to use it
+Managing Templates
 
-### Einstellungen anpassen
+    Click the extension icon in your browser toolbar.
 
-In der Einstellungsseite (Vorlagen verwalten) findest du unten einen **Einstellungen**-Bereich:
+    Click "Manage Templates" to open the settings.
 
-- **Ausblenden-Button anzeigen**: Schaltet den ✕ Button bei Anzeigen an/aus
-- **Vorlagen-Buttons anzeigen**: Schaltet die Vorlagen-Buttons unter Nachrichtenfeldern an/aus
-- **Rückgängig-Benachrichtigung anzeigen**: Schaltet den 5-Sekunden-Countdown beim Ausblenden an/aus
+    Here you can add new templates, edit existing ones, or delete them. You can also reset your hidden ads list here.
 
-Änderungen werden sofort gespeichert und beim nächsten Laden der Seite aktiv.
+Sending Messages
 
-## 📋 Standard-Vorlagen
+    On an ad page: Open the message box. You’ll see your template buttons right below the text field. Click one to insert the text.
 
-Die Extension startet mit 4 Vorlagen:
+    In Chats: The buttons also appear automatically in your active conversations.
 
-1. **Verfügbarkeit**: "Hallo, ist der Artikel noch verfügbar?"
-2. **Preis verhandeln**: "Hallo, ich interessiere mich für den Artikel. Wäre der Preis noch verhandelbar?"
-3. **Abholung**: "Hallo, ich würde den Artikel gerne abholen. Wann wäre das möglich?"
-4. **Versand**: "Hallo, würden Sie den Artikel auch versenden? Ich würde die Versandkosten übernehmen."
+Hiding Ads
 
-Du kannst alle Vorlagen beliebig anpassen!
+    Click the small ✕ in the top right corner of any ad.
 
-## 🆕 Neu in Version 2.0
+    An "Undo" button will appear at the bottom right for 5 seconds.
 
-- ✅ **Eigene Einstellungsseite** mit übersichtlicher Verwaltung
-- ✅ **Vorlagen bearbeiten** statt nur löschen und neu erstellen
-- ✅ **Undo-Funktion** (5 Sekunden) beim Ausblenden
-- ✅ **Kleinerer Ausblenden-Button** (weniger störend)
-- ✅ **Verbesserte Benutzeroberfläche** mit modernem Design
-- ✅ **Einstellungen**: Features an/aus schalten (Ausblenden-Button, Vorlagen-Buttons, Undo-Benachrichtigung)
+    If you don't click undo, the ad stays hidden.
 
-## 🛠️ Technische Details
+Default Templates
 
-- **Manifest Version**: 2 (Firefox-kompatibel)
-- **Browser API**: Verwendet `browser.*` API mit Fallback auf `chrome.*`
-- **Berechtigungen**: 
-  - `storage`: Zum Speichern von Vorlagen und ausgeblendeten Anzeigen
-  - Host-Berechtigung nur für `https://www.kleinanzeigen.de/*`
+The extension comes with 4 basic templates to get you started:
 
-## 💡 Tipps
+    Availability: "Hi, is this still available?"
 
-- **Platzhalter nutzen**: Schreibe Vorlagen wie "Hallo, ich interessiere mich für [ARTIKEL]. Ist er noch verfügbar?"
-- **Schnellzugriff**: Lege ein Lesezeichen für `about:debugging` an
-- **Mehrere Vorlagen**: Erstelle verschiedene Vorlagen für unterschiedliche Situationen
-- **Backup**: Notiere dir wichtige Vorlagen, da sie beim Deinstallieren verloren gehen
+    Price: "Hi, I'm interested. Is the price negotiable?"
 
-## 🐛 Probleme melden
+    Pickup: "Hi, I'd like to pick this up. When would be a good time?"
 
-Falls etwas nicht funktioniert:
+    Shipping: "Hi, would you be willing to ship this? I'll cover the costs."
 
-1. Überprüfe, ob du auf kleinanzeigen.de bist
-2. Lade die Seite neu (F5)
-3. In `about:debugging` → Extension neu laden
-4. Prüfe die Browser-Konsole (F12) auf Fehlermeldungen
+You can change or delete these at any time in the settings.
 
-## 📝 Bekannte Einschränkungen
+Troubleshooting
 
-- Extension muss nach jedem Firefox-Neustart neu geladen werden (Firefox-Limitierung für temporäre Add-ons)
-- Kleinanzeigen könnte ihr Layout ändern, dann müssen die Selektoren angepasst werden
+If it stops working:
 
----
+    Make sure you are actually on kleinanzeigen.de.
 
-Viel Erfolg beim Kaufen und Verkaufen auf Kleinanzeigen! 🦊🎉
+    Refresh the page (F5).
+
+    Go to about:debugging and reload the extension.
+
+    Check the browser console (F12) for errors.
