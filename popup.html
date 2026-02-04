@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kleinanzeigen Helper</title>
+  <style>
+    body {
+      width: 320px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .stats {
+      background: #e8f4fd;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #0066cc;
+      margin-bottom: 15px;
+    }
+    .btn {
+      width: 100%;
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      background: #0052a3;
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: #6c757d;
+    }
+    .btn-secondary:hover {
+      background: #5a6268;
+    }
+    .info {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <h2>📝 Kleinanzeigen Helper</h2>
+  
+  <div class="stats" id="stats">
+    <strong>Status:</strong><br>
+    <span id="templateCount">0</span> Vorlagen • <span id="hiddenCount">0</span> ausgeblendet
+  </div>
+
+  <button class="btn" id="openSettings">⚙️ Vorlagen verwalten</button>
+  <button class="btn btn-secondary" id="clearHidden">Ausgeblendete zurücksetzen</button>
+
+  <div class="info">
+    💡 Tipp: Auf Kleinanzeigen.de siehst du<br>deine Vorlagen unter jedem Nachrichtenfeld!
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

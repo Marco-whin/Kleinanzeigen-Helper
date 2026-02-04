@@ -1,0 +1,61 @@
+/* Kleinanzeigen Helper Styles */
+
+.ka-helper-templates {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+.ka-helper-template-btn {
+  transition: all 0.2s ease;
+}
+
+.ka-helper-template-btn:active {
+  transform: scale(0.95);
+}
+
+.ka-helper-hide-btn {
+  transition: all 0.2s ease;
+}
+
+.ka-helper-hide-btn:hover {
+  transform: scale(1.1);
+}
+
+.ka-helper-hide-btn:active {
+  transform: scale(0.95);
+}
+
+.ka-helper-undo-notification {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Hidden ad style */
+[data-ka-hidden="true"] {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
